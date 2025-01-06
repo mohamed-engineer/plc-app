@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  overflow-x: hidden;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --color-primary:#fefe;
+  --color-secodary:#fefe;
+  --color-hover:#fefe;
+}
+h1,h2,h3{
+  font-family: PrimaryFont;
+}
+@font-face {
+  font-family: PrimaryFont;
+  src: url('./fonts/BRLNSB.TTF');
+}
+.navbar-nav a:hover {
+  background:var(--color-primary);
+  transition: 0.4s;
+  color: white;
+  border-radius: 70px;
+  border: 0;
+  font-weight:unset;
+}
+
+.navbar{
+  background: white;
+  width: 85%;
+  height: 110px;
+  margin-top: 2.5%;
+  margin-left: 7.2%;
+  border-radius: 100px;
+  padding-top: 0px;
+  position:relative;
+  transition: 2s;
+  animation: down-fadeIn 2s;
+}
+.nav-item{
+  font-size: 18px;
+  font-family: PrimaryFont;
+  color: black;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+
+}
+
+.nav-item1{
+  font-size: 18px;
+  font-family: PrimaryFont;
+  color: black;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+
+}
+.nav-link{
+  font-family: PrimaryFont;
+  color: black;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+
+
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #000000; /* تغيير لون الخط */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 0 0 0;
+  position: relative;
+  color: black;
+
+}
+.login-button{
+  background-color: black;
+  border-radius: 25px;
+  color:white;
+}
+img,video{
+  user-drag: none;
+}
+*{
+  text-decoration: none !important;
+}
+a{
+  text-decoration: none;
+}
+.btn-link{
+  background-color: transparent;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #908c8e, 0 0 40px #b5b5b5;
+  box-shadow: 0 0 15px #ffffff, 0 0 20px #c1c0c0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-link:hover {
+  box-shadow: 0 0 25px #ffffff, 0 0 30px #ffff, 0 0 40px #fefe;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff;
+  transform: scale(1.1);
+}
+.btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;  
+}
+#headerIndex{
+  z-index: 1;
+}
+Link{
+  text-decoration: none;
+}
