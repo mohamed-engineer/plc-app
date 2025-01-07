@@ -9,10 +9,13 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg bg-white">
   <div className="container-fluid">
    <Link className="navbar-brand col-4" href="#">
-   <Image
-    src={LogoNav} 
-    width={400}
-   />
+   <Image 
+  src={LogoNav} 
+  width={400} 
+  height={100} 
+  alt="Logo"
+  />
+
    </Link>
    <ul className='nav' >
     <li className="nav-item">
