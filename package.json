@@ -2,12 +2,14 @@
   "name": "plc-app",
   "version": "0.1.0",
   "private": false,
+  "homepage": "https://mohamed-engineer.github.io/PLC/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deloy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist",
+    "predeploy":"npm run build"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
