@@ -135,6 +135,72 @@ a{
 #headerIndex{
   z-index: 1;
 }
-Link{
-  text-decoration: none;
+
+.bars-menu{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background: white;
+    width: 100%;
+    height: 60px;
+    margin-top: 0;
+    margin-left: 0;
+    border-radius: 0;
+    padding-top: 0px;
+    position: relative;
+    transition: 0s;
+    animation: down-fadeIn 2s;
+  }
+
+  .nav-item {
+    font-size: 18px;
+    font-family: PrimaryFont;
+    color: black;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav {
+    display: none !important;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 2rem !important;
+    z-index: 3;
+  }
+
+  .hide {
+    display: none !important;
+  }
+.btns{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 4;
+width: 100%;
+}
+
+.bars-menu{
+  display: block;
+  font-size:25px;
+  padding-right: 1rem !important;
+
+}
+.container-fluid{
+  padding: 0 !important;
+}
+.navbar-brand{
+  width: 50% !important;
+  padding-left: 1rem !important;
+}
+.navbar-brand Image{
+  width: 100% !important;
+
+}
+.navbar{
+  height:80px ;
+}
+
 }
